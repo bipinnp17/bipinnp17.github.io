@@ -41,9 +41,26 @@ header{
 }
 
 .logo{
-    font-size: 28px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 24px;
     font-weight: bold;
-    color: #8bfabd;
+    color: white;
+}
+.logo h3{
+    color: white;
+}
+.logo span{
+    color: rgb(255, 89, 230);
+}
+.logo img{
+    width: 38px;
+    height: 38px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #f253c59e;
 }
 
 .nav-links{
@@ -82,7 +99,7 @@ header{
 }
 .greeting {
     font-family:Georgia, 'Times New Roman', Times, serif;
-    color: #1dc486;
+    color: #19d08d;
     font-size: 20px;
     margin-bottom: 15px;
 
@@ -104,7 +121,7 @@ header{
 
 .btn {
     display: inline-block;
-    background-color: #03a476;
+    background-color: #078c6d;
     color: #ffffff;
     padding: 14px 30px;
     border-radius: 8px;
@@ -532,7 +549,7 @@ body.viewer-open{
 }
 
 .highlight{
-    color: #8bfad9;
+    color: #13ffb0;
 }
 
 .hero-description{
@@ -994,14 +1011,14 @@ body.viewer-open{
 
 .footer-logo{
     display: inline-block;
-    color: #5eead4;
+    color: #ea5eea;
     font-size: 28px;
     font-weight: 700;
     text-decoration: none;
     margin-bottom: 10px;
 }
 .footer-logo span {
-    color: #c084fc;
+    color: #fcf9ff;
 }
 .footer-text{
     color: #a1a1b5;
@@ -1087,4 +1104,51 @@ body{
     body{
         background-attachment: fixed ;
     }
+}
+
+/*star divider at intro part*/
+.star-divider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    max-width: 400px;
+    margin: 30px auto;
+}
+
+.star-divider span{
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #55f7c6
+    );
+}
+.star-divider span:last-child{
+    background: linear-gradient(
+        to left,
+        transparent,
+        #55f7c6
+    );
+}
+.star-divider .star{
+    color: #55f7c6;
+    font-size: 30px;
+    text-shadow: 0 0 15px #88f755,
+    0 0 22px #d10909;
+}
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 0px;
+}
+.logo-container img{
+    display: block;
+    width: 350px;
+    max-width: 90%;
+    height: auto;
 }
