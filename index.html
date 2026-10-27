@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Art Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <!--nav section-->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">My Art</a>
+
+            <button
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="nav-links"
+            type="button"
+            >
+            ☰
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+    <!--Main section-->
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="hero-badge">
+                ❋ Artist & Creative Developer ❋
+                </p>
+                <p class="greeting">Hello, it's Bipin & I'm an Artist</p>
+
+                <h1>
+                    Here Turning <span class="highlight">Imagination</span> Into Art.
+                </h1>
+                <p class="hero-description">
+                    I create pencil sketches, and digital illustrations of Anime, Manga, Video games and other topics that bring ideas to life. Some drawings even tells a story.
+                </p>
+                <div>
+                <a href="#gallery" class="btn">
+                    Explore My Art
+                </a>
+                <a href="#about" class="btn btn-secondary">
+                    About Me
+                </a>
+                </div>
+                <div class="hero-stats">
+                    <div>
+                        <h3>Traditional Artwork</h3>
+                        <p>Pencil Art</p>
+
+                    </div>
+                    <div>
+                        <h3>Digital Artwork</h3>
+                        <p>Illustration</p>
+                    </div>
+                    <div>
+                        <h3>Web development</h3>
+                        <p>Project</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--About section-->
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="images/Personal pfp.png" alt="Featured artwork by the artist" loading="lazy">
+                </div>
+                <div class="about-content">
+                    <p class="section-label">GET TO KNOW ME</p>
+                    <h2>About <span>Me</span></h2>
+                    <h3>Artist & Web Developer</h3>
+                    <p>
+                        I'm a passionate artist who loves creating digital illustrations and traditional artworks. The one who insipred me to do art are Yusuke Murata and Mr. ONE. So my goal is to reach the fraction of their skill level.
+                    </p>
+                    <div class="about-skills">
+                        <span>Traditional Drawings</span>
+                        <span>Digital Illustrations</span>
+                        <span>Web Development</span>
+                    </div>
+                    <a href="#gallery" class="btn about-btn">
+                        View My Artworks
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--gallery section-->
+        <section id="gallery">
+            <h2>My Artwork</h2>
+            <p class="gallery-intro">
+                Explore my pencil shetches, and digital illustrations.
+            </p>
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">
+                    All
+                </button>
+                <button class="filter-btn" data-filter="pencil">
+                    Pencil Drawings
+                </button>
+                <button class="filter-btn" data-filter="digital">
+                    Digital Drawings
+                </button>
+            </div>
+            <div class="gallery-container">
+                <article class="art-card" data-category="digital">
+                    <img 
+                    src="images/1.png" 
+                    alt="Digital Artwork"
+                    loading="lazy">
+                    <div class="art-info">
+                        <h3>Mountains Sketch</h3>
+                        <p>Digital Art</p>
+                    </div>
+                </article>
+                <article class="art-card" data-category="digital">
+                    <img 
+                    src="images/2.png" 
+                    alt="Digital Artwork"
+                    loading="lazy">
+                    <div class="art-info">
+                        <h3>Everest Sketch</h3>
+                        <p>Digital Art</p>
+                    </div>
+                </article>
+                <article class="art-card" data-category="pencil">
+                    <img 
+                    src="images/3.jpeg" 
+                    alt="Pen Artwork"
+                    loading="lazy">
+                    <div class="art-info">
+                        <h3>One Punch Man Sketch</h3>
+                        <p>Pencil Drawing</p>
+                    </div>
+                </article>
+                <article class="art-card" data-category="pencil">
+                    <img src="images/10.jpeg" alt="Pencil Artwork"
+                    loading="lazy">
+                    <div class="art-info">
+                        <h3>Hulk Artwork</h3>
+                        <p>Pencil Drawing</p>
+                    </div>
+                </article>
+                <article class="art-card" data-category="digital">
+                    <img src="images/18.webp" alt="Digital Sketch" loading="lazy">
+                    <div class="art-info">
+                        <h3>Butterfly Artwork</h3>
+                        <p>Digital Art</p>
+                    </div>
+                </article>
+                <article class="art-card" data-category="pencil">
+                    <img 
+                    src="images/17.jpeg" 
+                    alt="Pencil Artwork"
+                    loading="lazy">
+                    <div class="art-info">
+                        <h3>Suiryu Sketch</h3>
+                        <p>Pencil Drawing</p>
+                    </div>
+                </article>
+
+
+            </div>
+        </section>
+        <!--project section-->
+        <section id="projects">
+            <h2>My Projects</h2>
+            <p>
+                Creative and web development projects will be showcased here.
+            </p>
+        </section>
+
+        <!-- Contact section-->
+         <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <p class="section-label">LET'S CONNECT</p>
+                <h2>Have an Idea? <span>Let's Create!</span></h2>
+                <p class="contact-description">
+                    (Interested in any commissions, or a collaboration? I'd love to hear from you!)
+                </p>
+                <a href="mailto:nathbipin302@gmail.com" class="btn contact-btn">
+                    Email Me ✉
+                </a>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/bipin_np17/" class="social-link instagram" target="_blank" rel="noopener noreferrer" aria-label="Visit my Instagram"><i class="fa-brands fa-instagram"></i> <span>Instagram</span></a>
+                    <a href="https://x.com/bipin_np17/" class="social-link twitter" target="_blank" rel="noopener noreferrer" aria-label="Visit my X profile"><i class="fa-brands fa-x-twitter"></i><span>Twitter/X</span></a>
+                    <a href="https://github.com/bipinnp17/" class="social-link github" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub"><i class="fa-brands fa-github"></i> <span>GitHub</span></a>
+                    <a href="https://www.youtube.com/@bipin_np17" class="social-links youtube" target="_blank" rel="noopener noreferrer" aria-label="Visit my YouTube channel"><i class="fa-brands fa-youtube"> <span>YouTube</span></i></a>
+                </div>
+            </div>
+         </section>
+
+         <!--artwork viewer-->
+
+         <div id="art-viewer" class="art-viewer" role="dialog"
+         aria-modal="true" aria-label="Artwork viewer" 
+         aria-hidden="true" hidden>
+         <button
+         id="close-viewer" class="colse-viewer" type="button" aria-label="Close artwork viewer">
+        &times;
+        </button>
+        <div class="viewer-content">
+            <img id="viewer-image" src="" alt="">
+
+            <h2 id="viewer-title"></h2>
+            <p id="viewer-category"></p>
+        </div>
+
+         </div>
+
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-container">
+            <a href="#home" class="footer-logo">My Art<span>.</span></a>
+            <p class="footer-text">
+                Creating art, one stroke at a time.
+            </p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-divider"></div>
+            <p class="copyright">
+                &copy; <span id="current-year"></span> My Art. All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
