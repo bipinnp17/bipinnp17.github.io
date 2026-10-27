@@ -246,8 +246,9 @@ footer p{
         font-size: 16px;
     }
 
-    .gallery-container{
-        grid-template-columns: 1fr;
+    .gallery-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
     }
     
 }
@@ -298,7 +299,20 @@ footer p{
 }
 @media (max-width: 480px) {
     .art-card img {
-        height: 140px;
+        height: 130px;
+        object-fit: contain;
+    }
+
+    .art-info {
+        padding: 8px;
+    }
+
+    .art-info h3 {
+        font-size: 12px;
+    }
+
+    .art-info p {
+        font-size: 10px;
     }
 }
 
