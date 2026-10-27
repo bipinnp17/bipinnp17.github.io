@@ -1052,3 +1052,39 @@ body.viewer-open{
         font-size: 25px;
     }
 }
+
+/*background image*/
+
+body{
+    background-color: #0e0e16;
+    background-image: 
+    linear-gradient(
+        rgba(14, 14, 22, 0.55),
+        rgba(14, 14, 22, 0.70)
+    ),
+    url("images/25.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.hero,
+.about-section,
+.contact-section,
+.footer{
+    background-color: transparent;
+}
+
+.about-section,
+.contact-section{
+    background-color: rgba(18, 18, 28, 0.65);
+}
+.footer{
+    background-color: rgba(14, 14,22,0.85);
+}
+
+@media (max-width: 768px){
+    body{
+        background-attachment: fixed ;
+    }
+}
