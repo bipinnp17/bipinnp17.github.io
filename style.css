@@ -89,7 +89,7 @@ header{
     text-align: center;
     background: linear-gradient(
         135deg,
-        #0f0f17
+        #0f0f17,
         #24163d
     );
 }
@@ -505,7 +505,7 @@ body.viewer-open{
     overflow: hidden;
     background: 
     radial-gradient(
-        circle at 85% 25%
+        circle at 85% 25%,
         rgba(138, 92, 246, 0.18),
         transparent 35%
     ),
